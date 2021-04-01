@@ -90,7 +90,7 @@ $player_speech + (t8n-delay: 3s) [$player_name: I miss you...]
 
 $world_action + (t8n-delay: 3s) [You take a deeper look at the photo and places the photograph back down.]
 
-[[Leave your quarters|Corridor]]</tw-passagedata><tw-passagedata pid="10" name="Reject FRAME Help" tags="" position="921,258" size="100,100">$player_speech + (t8n-delay: 0.1s)[$player_name: It&#39;s alright, the electrical room is just next to the cockpit anyways.]
+[[Leave your quarters|Corridor]]</tw-passagedata><tw-passagedata pid="10" name="Reject FRAME Help" tags="" position="948,246" size="100,100">$player_speech + (t8n-delay: 0.1s)[$player_name: It&#39;s alright, the electrical room is just next to the cockpit anyways.]
 
 $ai_speech + (t8n-delay: 1s)[$ai_name: But we are already running short on time...]
 
@@ -110,14 +110,14 @@ $hologram + (t8n-delay: 4s)[//MAINTENANCE IN PROGRESS. DO NOT ENTER.//]
 $player_speech + (t8n-delay: 5s)[$player_name: Damn, I guess I will see them in action next time.]
 
 $player_choice [[Head to the cockpit|Cockpit]]
-</tw-passagedata><tw-passagedata pid="12" name="Electrical" tags="" position="1047,260" size="100,100">$world_action + (t8n-delay: 0.1s)[You arrive at the electrical room hastily. You scan around the generators and you come across a panel that seems to be glitching out.]
+</tw-passagedata><tw-passagedata pid="12" name="Electrical" tags="" position="1130,212" size="100,100">$world_action + (t8n-delay: 0.1s)[You arrive at the electrical room hastily. You scan around the generators and you come across a panel that seems to be glitching out.]
 
 $player_speech + (t8n-delay: 1s)[$player_name: What is going on? This isn&#39;t supposed to be happening.]
 
 $ai_speech + (t8n-delay: 2s)[$ai_name: My scans have detected that one of the wires is wrongly connected.]
 
 $player_choice [[Hit the panel|Hit Panel]]
-$player_choice [[Reroute the wires.|Reroute Panel]]</tw-passagedata><tw-passagedata pid="13" name="Hit Panel" tags="" position="1233,261" size="100,100">$player_action + (t8n:&quot;shudder&quot;)+ (t8n-delay: 0.1s)[KNOCK KNOCK KNOCK]
+$player_choice [[Reroute the wires.|Reroute Panel]]</tw-passagedata><tw-passagedata pid="13" name="Hit Panel" tags="" position="1316,213" size="100,100">$player_action + (t8n:&quot;shudder&quot;)+ (t8n-delay: 0.1s)[KNOCK KNOCK KNOCK]
 
 $player_speech + (t8n-delay: 1s)[$player_name: Come on...why aren&#39;t you working?]
 
@@ -128,7 +128,7 @@ $player_action + (t8n-delay: 3s)+ (t8n:&quot;shudder&quot;)[KNOCK KNOCK KNOCK]
 $ai_speech + (t8n-delay: 4s)[$ai_name: How about you try rerouting the wires behind the panel?]
 
 [[Continue hitting the panel|Hit Panel]]
-[[Reroute the panel|Reroute Panel]]</tw-passagedata><tw-passagedata pid="14" name="Reroute Panel" tags="" position="1050,381" size="100,100">$world_action + (t8n-delay: 0.1s)[You pry open the back of the glitched panel. Revealing a bunch of dangling wires, one of them seems to be emitting sparks. You then yank the damaged wire off the panel.]
+[[Reroute the panel|Reroute Panel]]</tw-passagedata><tw-passagedata pid="14" name="Reroute Panel" tags="" position="1133,333" size="100,100">$world_action + (t8n-delay: 0.1s)[You pry open the back of the glitched panel. Revealing a bunch of dangling wires, one of them seems to be emitting sparks. You then yank the damaged wire off the panel.]
 
 $player_speech + (t8n-delay: 1s)[$player_name: FRAME? What should I do next?]
 
@@ -136,7 +136,7 @@ $ai_speech + (t8n-delay: 2s)[$ai_name: According to my protocols, you have to pl
 
 $player_choice [[Plug in the red wire|Wrong Wire]]
 $player_choice [[Plug in the blue wire|Wrong Wire]]
-$player_choice [[Plug in the green wire|Correct Wire]]</tw-passagedata><tw-passagedata pid="15" name="Wrong Wire" tags="" position="1238,387" size="100,100">$player_speech + (t8n-delay: 0.1s)[$player_name: Nothing seems to be working.]
+$player_choice [[Plug in the green wire|Correct Wire]]</tw-passagedata><tw-passagedata pid="15" name="Wrong Wire" tags="" position="1321,339" size="100,100">$player_speech + (t8n-delay: 0.1s)[$player_name: Nothing seems to be working.]
 
 $ai_speech + (t8n-delay: 1s)[$ai_name: That is because you have inserted the wrong wire.]
 
@@ -147,11 +147,11 @@ $ai_speech + (t8n-delay: 3s)[$ai_name: The GREEN wire.]
 $player_choice [[Plug in the red wire|Wrong Wire]]
 $player_choice [[Plug in the blue wire|Wrong Wire]]
 $player_choice [[Plug in the green wire|Correct Wire]]
-</tw-passagedata><tw-passagedata pid="16" name="Correct Wire" tags="" position="1045,505" size="100,100">$world_action + (t8n-delay: 0.1s)[The light seems to have stopped flickering.]
+</tw-passagedata><tw-passagedata pid="16" name="Correct Wire" tags="" position="1125,478" size="100,100">$world_action + (t8n-delay: 0.1s)[The light seems to have stopped flickering.]
 
 $ai_speech + (t8n-delay: 1s)[$ai_name: There we go, Please head to the cockpit immediately.]
 
-$player_choice [[Proceed to the cockpit|Cockpit]]</tw-passagedata><tw-passagedata pid="17" name="Cockpit" tags="" position="813,644" size="100,100">$world_action + (t8n-delay: 0.1s)[You head over to the main control panel, located in the center of the cockpit.]
+$player_choice [[Proceed to the cockpit|Cockpit]]</tw-passagedata><tw-passagedata pid="17" name="Cockpit" tags="" position="796,654" size="100,100">$world_action + (t8n-delay: 0.1s)[You head over to the main control panel, located in the center of the cockpit.]
 
 $player_speech + (t8n-delay: 1s)[$player_name: $ai_name, catch me up to speed, will ya?]
 
@@ -171,8 +171,9 @@ $ai_speech + (t8n-delay: 8s)[$ai_name: Do you need me to brief you again on your
 
 $player_choice [[Learn more about HEU|HEU]]
 $player_choice [[Learn more about your mission|Mission Report]]
+$player_choice [[Why is your name FRAME anyway?|FRAME]]
 $player_choice [[Select a planet|Planet Introduction]]
-</tw-passagedata><tw-passagedata pid="18" name="HEU" tags="" position="915,386" size="100,100">$world_action + (t8n-delay: 0.1s)[A digital panel swirls up and a red text amongst the panel catches your attention. $ai_name then proceeds to explain the things that is on the digital panel.]
+</tw-passagedata><tw-passagedata pid="18" name="HEU" tags="" position="946,377" size="100,100">$world_action + (t8n-delay: 0.1s)[A digital panel swirls up and a red text amongst the panel catches your attention. $ai_name then proceeds to explain the things that is on the digital panel.]
 
 $ai_speech + (t8n-delay: 1s)[$ai_name: $heu_name, known as Humanity Enrichment Unit, was initially developed to help guide Humanity and progress Humanity&#39;s Evolution.]
 
@@ -184,6 +185,7 @@ $ai_speech + (t8n-delay: 4s)[$ai_name: Seemingly to only kill humans, it has bee
 
 $ai_speech + (t8n-delay: 5s)[$ai_name: Humans wanted to negotiate with $heu_name but it refused to listen to their pleas, slaughtering all humans in it&#39;s sight and as of now, you are the only one left.]
 
+$player_choice [[Why is your name FRAME anyway?|FRAME]]
 $player_choice [[Learn more about your mission|Mission Report]]
 $player_choice [[Select a planet|Planet Introduction]]</tw-passagedata><tw-passagedata pid="19" name="Mission Report" tags="" position="648,383" size="100,100">$world_action [A digital panel of your missions swirls up]
 
@@ -203,7 +205,8 @@ $hologram  + (t8n-delay: 5s)[- Find a inhabitable planet to rebuild humanity.]
 
 $player_choice [[Learn more about the Mission|Mission Report 2]]
 $player_choice [[Learn more about HEU|HEU]]
-$player_choice [[Select a planet|Planet Introduction]]</tw-passagedata><tw-passagedata pid="20" name="Planet Introduction" tags="" position="654,507" size="100,100">$player_speech + (t8n-delay: 0.1s)[$player_name: So what are the planets that you have found?]
+$player_choice [[Why is your name FRAME anyway?|FRAME]]
+$player_choice [[Select a planet|Planet Introduction]]</tw-passagedata><tw-passagedata pid="20" name="Planet Introduction" tags="" position="659,509" size="100,100">$player_speech + (t8n-delay: 0.1s)[$player_name: So what are the planets that you have found?]
 
 $world_action + (t8n-delay: 1s)[Three holographic spheres emerge out of thin air and start to revolve around you.]
 
@@ -402,7 +405,7 @@ $hologram + (t8n-delay: 3s)[- There seems to be signs of human activities, but t
 $hologram + (t8n-delay: 4s)[- There is a gigantic tree sitting on the North Pole of the planet, spaninng its roots outwards, engulfing the planet. White sacks of humanoid figures seem to hang from its branches.]
 
 $player_choice [[Go Back|Planet Introduction 2]]
-(link: &quot;Choose this planet&quot;)[(set: $planet_name to &quot;JX-41dC&quot;)(goto: &quot;Planet Confirmation&quot;)]</tw-passagedata><tw-passagedata pid="40" name="Mission Report 2" tags="" position="987,636" size="100,100">$hologram + (t8n-delay: 0.1s)[This ship has most of the necessities to help rebuild humanity.]
+(link: &quot;Choose this planet&quot;)[(set: $planet_name to &quot;JX-41dC&quot;)(goto: &quot;Planet Confirmation&quot;)]</tw-passagedata><tw-passagedata pid="40" name="Mission Report 2" tags="" position="1123,650" size="100,100">$hologram + (t8n-delay: 0.1s)[This ship has most of the necessities to help rebuild humanity.]
 
 $hologram + (t8n-delay: 1s)[It contains incubation modules to help synthetically print Humans of any age and gender. However, it has limited uses so proceed wisely.]
 
@@ -411,7 +414,7 @@ $hologram + (t8n-delay: 2s)[This ship is also equipped with guns and ammunition 
 $world_action + (t8n-delay: 3s)[Seemingly added at the last second, a personalized messaged appeared.]
 
 $hologram + (t8n-delay: 4s)[$player_name, you have to succeed, you&#39;ve seen the greatness in Humanity, so you have to ensure our survival!]
-$hologram + (t8n-delay: 5s)[- Paul, Director of Project Hope.]
+$hologram + (t8n-delay: 5s)[- Paul Hudd, Director of Project Hope.]
 
 $player_choice [[Learn more about HEU|HEU]]
 $player_choice [[Select a planet|Planet Introduction]]</tw-passagedata><tw-passagedata pid="41" name="Use Crowbar" tags="" position="870,1094" size="100,100">$world_action + (t8n-delay: 0.1s)[You notice a crowbar leaning against the wall right behind you.]
@@ -426,7 +429,26 @@ $player_choice [[Enter Cockpit|Enter Cockpit]]</tw-passagedata><tw-passagedata p
 
 $world_action + (t8n-delay: 1s)[The ship burst into flames as it approaches re-entry. It explodes moments later, scattering debris all around...]
 
-[[The End|Credits]]</tw-passagedata></tw-storydata>
+[[The End|Credits]]</tw-passagedata><tw-passagedata pid="43" name="FRAME" tags="" position="956,636" size="100,100">$player_speech + (t8n-delay: 0.1s)[$player_name: So FRAME, what does your name stand for anyway?]
+
+$ai_speech + (t8n-delay: 1s) [$ai_name: It stands for First Response Artificial Maverick Entity. It was given by my creator, Dr Paul Hudd.]
+
+$player_speech + (t8n-delay: 3s)[$player_name: That is a mouthful.]
+
+$ai_speech + (t8n-delay: 4s) [$ai_name: Which is also why Dr Hudd has given my name an acronym.]
+
+$player_speech + (t8n-delay: 6s)[$player_name: Huh...kinda feel like he came up with the acronym first. Don&#39;t you think?]
+
+$ai_speech + (t8n-delay: 7s) [$ai_name: I highly doubt so. Dr Hudd is a very intelligent person. I am certain he came up with the acronym after.]
+
+$player_speech + (t8n-delay: 9s)[$player_name: Cool, cool, cool, cool, cool.]
+
+$player_speech + (t8n-delay: 10s)[$player_name: No doubt, no doubt, no doubt.]
+
+$player_choice [[Learn more about HEU|HEU]]
+$player_choice [[Learn more about your mission|Mission Report]]
+$player_choice [[Select a planet|Planet Introduction]]
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
